@@ -1,0 +1,189 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+.nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: #43464c;
+}
+.nav li{
+	float: left;
+}
+.nav li a, #register, #loging{
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 16px;
+	color: white;
+	padding: 15px;
+}
+.nav li a.active{
+	background-color:#303235;
+}
+.nav li a:hover, .registerLi:hover #register, .loginLi:hover #loging{
+	background-color: #303235;
+}
+li.loginLi, li.registerLi{
+	float: right;
+	display: inline-block;
+}
+.nav li:first-child{
+	margin-left: 20px;
+}
+#register{
+	margin-right: 20px;
+	position: relative;
+}
+#loging{
+	position: relative;
+}
+
+.loginForm{
+	visibility: hidden;
+	opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+	right: 40px;							 /*działa*/
+	top: 120px; 							/*nie działa, czemu?*/
+    background-color: #43464c;
+    box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
+    z-index: 1;
+	padding: 10px;
+	border-radius: 5px;
+	width: 250px;
+}
+.loginForm::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #43464c transparent;
+}
+.registerForm::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 55px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #43464c transparent;
+}
+.registerForm{
+	visibility: hidden;
+	opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+	right: 20px;
+    background-color: #43464c;
+    box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
+    z-index: 1;
+	padding: 10px;
+	border-radius: 5px;
+	width: 250px;
+}
+.registerLi:hover .registerForm{
+	visibility: visible;
+	opacity: 1;
+	top: 49px;
+}
+.loginLi:hover .loginForm{
+	visibility: visible;
+	opacity: 1;
+	top: 49px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #303235;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+	background-color: #1e1f21;
+}
+label{
+	margin: 5px;
+}
+.headerMain{
+	text-align: center;
+}
+.headerMain img{
+	margin-top: 20px;
+	width:400px;
+	height: auto;
+}
+.headerMain p{
+	font-size: 25px;
+	letter-spacing: 3px;
+}
+
+
+
+
+
+
+.footer{
+	background-color: #43464c;
+	height: 120px;
+}
+.contact{
+	float: left;
+	margin: 10px;
+}
+.rights{
+	float: left;
+	margin: 10px;
+	font-size: 16px;
+	letter-spacing: 2px;
+	vertical-align: middle;
+}
+.rights p{
+	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;	/*nic nie działa nawet przy ustalonej wysokosci footer*/
+}
+.socialMedia{
+	float: right;
+}
+.icon{
+	float:left;
+	font-size: 40px;
+	border: 5px solid white;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 20px;
+}
