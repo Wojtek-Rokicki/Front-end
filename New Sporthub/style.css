@@ -149,36 +149,93 @@ label{
 	font-size: 25px;
 	letter-spacing: 3px;
 }
+body header{
+	margin-bottom: 50px;
+}
 
 
+.thumbnailSection{
+	width: 80%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.leftArrow{
+	float: left;
+	font-size: 40px;
+	margin-top: 150px;
+}
+.rightArrow{
+	float: left;
+	font-size: 40px;
+	margin-top: 150px;
+}
+.rightArrow a, .leftArrow a{
+	color: white;
+}
+.thumbnail{
+	float: left;
+	width: 25%;
+	margin: 20px;
+	text-align: center;
+}
+.thumbnail img{
+	width: 200px;
+	height: auto;
+}
 
 
+.thumbnailUnrolling{
+	text-align: center;
+	margin-top: 50px;
+}
+/* Tu JS podmiany zawartości thumbnailUnrolling */
 
 
+body footer{
+	margin-top: 50px;
+}
 .footer{
 	background-color: #43464c;
-	height: 120px;
 }
 .contact{
 	float: left;
-	padding-left: 30px;
+	margin: 10px;
+	padding-left: 5%;
+	width: 30%;
 }
 .rights{
 	float: left;
+	width: 30%;
+	margin: 40px 0;
 	font-size: 16px;
-	padding-top: 35px;
-	padding-left: 20%;
 	letter-spacing: 2px;
 }
 
 .socialMedia{
 	float: right;
+	width: 30%;
+	padding: 25px 0;
 }
 .icon{
 	float:left;
-	font-size: 40px;
+	font-size: 32px;
 	border: 5px solid white;
 	border-radius: 10px;
 	padding: 5px;
-	margin: 20px;
+	margin: 10px;
+}
+.socialMedia a{
+	text-decoration: none;
+	color: white;
+}
+.iconf:hover{
+	background-color: #425d93;
+}
+.iconi:hover{
+	background-color: #99215d;
+}
+.icons:hover{
+	background-color: #cfd608;
 }
