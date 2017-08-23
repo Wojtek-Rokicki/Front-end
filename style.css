@@ -1,0 +1,383 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+.menuIcon{
+	display: none;
+}
+.fixedFacebook, .fixedSnapChat, .fixedInstagram{
+	display: none;
+}
+.nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: #43464c;
+}
+.nav li{
+	float: left;
+}
+.nav li a, #register, #loging{
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 16px;
+	color: white;
+	padding: 15px;
+}
+.nav li a.active{
+	background-color:#303235;
+}
+.nav li a:hover, .registerLi:hover #register, .loginLi:hover #loging{
+	background-color: #303235;
+}
+li.loginLi, li.registerLi{
+	float: right;
+	display: inline-block;
+}
+.nav li:first-child{
+	margin-left: 20px;
+}
+#register{
+	margin-right: 20px;
+	position: relative;
+}
+#loging{
+	position: relative;
+}
+
+.loginForm{
+	visibility: hidden;
+	opacity: 0;
+    transition: opacity 1s;
+	position: absolute;
+	right: 40px;
+	top: 64px;
+    background-color: #43464c;
+    box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
+    z-index: 1;
+	padding: 10px;
+	border-radius: 5px;
+	width: 250px;
+}
+.loginForm::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #43464c transparent;
+}
+.registerForm::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 55px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #43464c transparent;
+}
+.registerForm{
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+    position: absolute;
+	right: 20px;
+	top: 64px;
+    background-color: #43464c;
+    box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
+    z-index: 1;
+	padding: 10px;
+	border-radius: 5px;
+	width: 250px;
+}
+.registerLi:hover .registerForm{
+	visibility: visible;
+	opacity: 1;
+}
+.loginLi:hover .loginForm{
+	visibility: visible;
+	opacity: 1;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #303235;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+	background-color: #1e1f21;
+}
+label{
+	margin: 5px;
+}
+.headerMain{
+	text-align: center;
+}
+.headerMain img{
+	margin-top: 20px;
+	width: 400px;
+	height: auto;
+}
+.headerMain p{
+	font-size: 25px;
+	letter-spacing: 3px;
+}
+body header{
+	margin-bottom: 50px;
+}
+
+
+.thumbnailSection{
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.upArrow, .downArrow{
+	display: none;
+}
+.leftArrow{
+	float: left;
+	width: 20%;
+	font-size: 40px;
+	margin-top: 150px;
+}
+.rightArrow{
+	float: left;
+	width: 20%;
+	font-size: 40px;
+	margin-top: 150px;
+}
+.rightArrow a, .leftArrow a{
+	color: white;
+	width: 20px;
+	display: block;
+	margin: auto;
+}
+.thumbnail{
+	float: left;
+	padding: 20px;
+	width: 20%;
+	text-align: center;
+}
+.thumbnail img{
+	width: 100%;
+	height: auto;
+}
+
+
+.thumbnailUnrolling{
+	text-align: center;
+	margin-top: 50px;
+}
+.thumbnailUnrolling img{
+	width: 30%;
+	height: auto;
+}
+/* Tu JS podmiany zawartości thumbnailUnrolling */
+
+
+footer{
+	margin-top: 50px;
+	background-color: #43464c;
+}
+.contact{
+	float: left;
+	width: 33.33%;
+	padding-left: 60px;
+}
+.rights{
+	float: left;
+	width: 33.33%;
+	padding-top: 50px;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+.rights p{
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+.socialMedia{
+	float: left;
+	width: 33.33%;
+	padding: 20px;
+	padding-right: 60px;
+}
+.icon{
+	float: right;
+	font-size: 32px;
+	border: 5px solid white;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 10px;
+}
+.socialMedia a{
+	text-decoration: none;
+	color: white;
+}
+.iconf:hover{
+	background-color: #425d93;
+}
+.iconi:hover{
+	background-color: #99215d;
+}
+.icons:hover{
+	background-color: #cfd608;
+}
+
+
+@media only screen and (max-width: 700px){
+	/* Social Media */
+	.fixedFacebook{
+		display: block;
+		position: fixed;
+		top: 20px;
+		right: 0px;
+		background-color: #425d93;
+		width: 50px;
+		height: 30px;
+		font-size: 20px;
+		padding: 6px;
+	}
+	.fixedSnapChat{
+		display: block;
+		position: fixed;
+		top: 70px;
+		right: 0px;
+		background-color: #cfd608;
+		width: 50px;
+		height: 30px;
+		font-size: 20px;
+		padding: 4px;
+		padding-left: 6px;
+	}
+	.fixedInstagram{
+		display: block;
+		position: fixed;
+		top: 120px;
+		right: 0px;
+		background-color: #99215d;
+		width: 50px;
+		height: 30px;
+		font-size: 20px;
+		padding: 4px;
+		padding-left: 6px;
+	}
+	/* Menu */
+	.nav{
+		display: none;
+	}
+	.menuIcon{
+		display: block;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	.menuIcon i{
+		position: relative;
+		top: 20px;
+		left: 20px;
+		border: 3px solid white;
+		border-radius: 10px;
+	}
+	/* Main Header */
+	.headerMain img{
+		margin-top: 20px;
+		width: 300px;
+		height: auto;
+	}
+	.headerMain p{
+		font-size: 22px;
+		letter-spacing: 3px;
+	}
+	/* Thumbnail section */
+	.rightArrow, .leftArrow{
+		float: none;
+		display: none;
+	}
+	.thumbnail{
+		float: none;
+		display: block;
+		width: 70%;
+		margin: auto;
+		padding: 20px;
+		text-align: center;
+	}
+	.upArrow, .downArrow{
+		display: block;
+	}
+	.upArrow a, .downArrow a{
+		display: block;
+		width: 20px;
+		font-size: 40px;
+		color: white;
+		margin: 40px auto;
+	}
+	.upArrow a i, .downArrow a i{
+		position: relative;
+		left: -15px;
+	}
+	/* Footer */
+	.contact{
+		float: none;
+		display: block;
+		width: 70%;
+		margin: auto;
+		padding-top: 10px;
+		text-align: center;
+		position: relative;
+		left: -25px;
+	}
+	.rights{
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 30px 0;
+		font-size: 16px;
+		letter-spacing: 2px;
+	}
+	.socialMedia{
+		float: none;
+		display: none;
+	}
+
+	.thumbnailUnrolling{
+		display: none;
+	}
+}
