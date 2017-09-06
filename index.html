@@ -14,7 +14,7 @@
 	<body>
 		<header>
 			<div class="menuIcon">
-				<i class="icon-menu"></i>
+				<i class="icon-menu" onclick="unroll()"></i>
 			</div>
 			<div class="fixedFacebook">
 				<i class="icon-facebook"></i>
@@ -130,5 +130,13 @@
 			</div>
 			<div style="clear:both;"></div>
 		</footer>
+		<script>
+			//var menu = document.getElementsByClassName("menuIcon")[0];
+			//var nav = document.getElementsByTagName("nav")[0];
+			function unroll(){
+				document.getElementsByClassName("nav")[0].style.display="block";
+				document.getElementsByClassName("menuIcon")[0].style.display="none";
+			}
+		</script>
 	</body>
 </html>
