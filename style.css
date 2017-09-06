@@ -302,6 +302,21 @@ footer{
 	/* Menu */
 	.nav{
 		display: none;
+		text-align: center;
+	}
+	.nav li{
+		float: none;
+		display: block;
+	}
+	.nav li:first-child{
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+	.nav li:last-child{
+		margin-bottom: 20px;
+	}
+	#register{
+		margin-right: 0px;
 	}
 	.menuIcon{
 		display: block;
