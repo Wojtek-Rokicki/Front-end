@@ -56,30 +56,19 @@ li.loginLi, li.registerLi{
 }
 
 .loginForm{
-	visibility: hidden;
 	opacity: 0;
     transition: opacity 1s;
 	position: absolute;
-	right: 40px;
+	right: 210px;
 	top: 64px;
     background-color: #43464c;
     box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
     z-index: 1;
 	padding: 10px;
 	border-radius: 5px;
-	width: 250px;
+	width: 200px;
 }
 .loginForm::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -50px;
-    border-width: 15px;
-    border-style: solid;
-    border-color: transparent transparent #43464c transparent;
-}
-.registerForm::after {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -89,26 +78,33 @@ li.loginLi, li.registerLi{
     border-style: solid;
     border-color: transparent transparent #43464c transparent;
 }
+.registerForm::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 20px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #43464c transparent;
+}
 .registerForm{
-	visibility: hidden;
 	opacity: 0;
 	transition: opacity 1s;
     position: absolute;
-	right: 20px;
+	right: 16px;
 	top: 64px;
     background-color: #43464c;
     box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
     z-index: 1;
 	padding: 10px;
 	border-radius: 5px;
-	width: 250px;
+	width: 200px;
 }
 .registerLi:hover .registerForm{
-	visibility: visible;
 	opacity: 1;
 }
 .loginLi:hover .loginForm{
-	visibility: visible;
 	opacity: 1;
 }
 input[type=text], select {
