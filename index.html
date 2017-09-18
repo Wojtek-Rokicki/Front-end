@@ -30,7 +30,7 @@
 				<ul class="nav">
 					<li><a href="#" class="active">SportHub</a></li>
 					<li><a href="#">Menu</a></li>
-					<li><a href="#">Główne</a></li>
+					<li><a href="#">Menu2</a></li>
 					<li class="registerLi">
 						<a href="#" id="register">Rejestracja</a>
 						<div class="registerForm">
@@ -59,7 +59,7 @@
 			</nav>
 			<div class="headerMain">
 				<img src="SportHub.png" alt="Logo SportHub"/>
-				<p>&bdquo; Motto as cheap as Oskar &rdquo;</p>
+				<p>&bdquo; Lorem ipsum dolor &rdquo;</p>
 			</div>
 		</header>
 		<main>
@@ -68,36 +68,71 @@
 				<section>
 					<div class="thumbnailSection">
 						<div class="leftArrow">
-							<a href="#"><i class="icon-left-open"></i></a>
+							<a onclick="plusSlides(-1)"><i class="icon-left-open"></i></a>
 						</div>
 						<div class="upArrow">
-							<a href="#"><i class="icon-up-open"></i></a>
+							<a onclick="plusSlides(-1)"><i class="icon-up-open"></i></a>
 						</div>
-						<div class="thumbnail adin">
-							<img src="1.jpg" alt=""/>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+						<div class="mySlides fade">
+							<div class="thumbnail">
+								<img src="got.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="got.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="got.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
 						</div>
-						<div class="thumbnail">
-							<img src="2.jpg" alt=""/>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+						<div class="mySlides fade">
+							<div class="thumbnail">
+								<img src="got2.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="got2.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="got2.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
 						</div>
-						<div class="thumbnail">
-							<img src="3.jpg" alt=""/>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+						<div class="mySlides fade">
+							<div class="thumbnail">
+								<img src="got3.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="got3.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="got3.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
 						</div>
 						<div class="rightArrow">
-							<a href="#"><i class="icon-right-open"></i></a>
+							<a onclick="plusSlides(1)"><i class="icon-right-open"></i></a>
 						</div>
 						<div class="downArrow">
-								<a href="#"><i class="icon-down-open"></i></a>
+								<a onclick="plusSlides(1)"><i class="icon-down-open"></i></a>
 							</div>
 						<div style="clear: both;"></div>
 					</div>
+					<div id="dots" style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span> 
+						<span class="dot" onclick="currentSlide(2)"></span> 
+						<span class="dot" onclick="currentSlide(3)"></span> 
+					  </div>
 				</section>
 				<hr>
 				<section>
 					<div class="thumbnailUnrolling">
-						<img src="1.jpg" alt=""/>
+						<img src="got2.jpg" alt=""/>
 					</div>
 				</section>
 			</div>
@@ -137,6 +172,33 @@
 			function unroll(){
 				document.getElementsByClassName("nav")[0].style.display="block";
 				document.getElementsByClassName("menuIcon")[0].style.display="none";
+			}
+			//Slider
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1} 
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none"; 
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block"; 
+			dots[slideIndex-1].className += " active";
 			}
 		</script>
 	</body>

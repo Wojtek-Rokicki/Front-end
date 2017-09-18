@@ -162,22 +162,29 @@ body header{
 .thumbnailSection{
 	width: 100%;
 	margin-top: 40px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.mySlides {
+    display: none;
 }
 .upArrow, .downArrow{
 	display: none;
+	cursor: pointer;
 }
 .leftArrow{
 	float: left;
 	width: 20%;
 	font-size: 40px;
 	margin-top: 150px;
+	cursor: pointer;
 }
 .rightArrow{
 	float: left;
 	width: 20%;
 	font-size: 40px;
 	margin-top: 150px;
+	cursor: pointer;
 }
 .rightArrow a, .leftArrow a{
 	color: white;
@@ -195,6 +202,39 @@ body header{
 	width: 100%;
 	height: auto;
 }
+#dots{
+	margin-bottom: 35px;
+}
+.dot {
+	cursor:pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  /* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
 
 
 .thumbnailUnrolling{
