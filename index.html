@@ -10,27 +10,30 @@
 		<meta name="keywords" content=""/>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css"/>
+		<link rel="stylesheet" type="text/css" href="fontello2/css/fontello.css"/>
+		<link rel="Shortcut icon" href="SportHub.png" />
 	</head>
 	<body>
 		<header>
-			<div id="demo"></div>
 			<div class="menuIcon">
-				<i class="icon-menu" onclick="unroll()"></i>
+				<i class="icon-menu" onclick="openNav()"></i>
 			</div>
 			<div class="fixedFacebook">
 				<i class="icon-facebook"></i>
 			</div>
-			<div class="fixedSnapChat">
-				<i class="icon-snapchat-ghost"></i>
+			<div class="fixedTwitter">
+				<i class="icon-twitter-bird"></i>
 			</div>
 			<div class="fixedInstagram">
-				<i class="icon-instagram"></i>
+				<i class="icon-instagram-filled"></i>
 			</div>
 			<nav>
 				<ul class="nav">
-					<li><a href="#" class="active">SportHub</a></li>
-					<li><a href="#">Menu</a></li>
-					<li><a href="#">Menu2</a></li>
+					<li><p class="name">SportHub</p></li>
+					<li><a href="#" class="active"><i class="icon-home"></i> Strona główna</a></li>
+					<li><a href="#"><i class=" icon-soccer-ball"></i> Obiekty sportowe</a></li>
+					<li><a href="#"><i class="icon-globe"></i> Mapa</a></li>
+					<li><a href="#"><i class="icon-user-o"></i> O nas</a></li> 
 					<li class="registerLi">
 						<a href="#" id="register">Rejestracja</a>
 						<div class="registerForm">
@@ -57,9 +60,21 @@
 					</li>
 				</ul>
 			</nav>
+			<div id="navigation">
+				<ul>
+					<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+					<li><p>SportHub</p></li>
+					<li><a href="#"><i class="icon-home"></i> Strona główna</a></li>
+					<li><a href="#"><i class=" icon-soccer-ball"></i> Obiekty sportowe</a></li>
+					<li><a href="#"><i class="icon-globe"></i> Mapa</a></li>
+					<li><a href="#"><i class="icon-user-o"></i> O nas</a></li> 
+					<li><a href="#">Rejestracja</a></li>
+					<li><a href="#">Logowanie</a></li>
+				</ul>
+			</div>
 			<div class="headerMain">
 				<img src="SportHub.png" alt="Logo SportHub"/>
-				<p>&bdquo; Lorem ipsum dolor &rdquo;</p>
+				<p>&bdquo; Call your friends. Find a place. Go and play. &rdquo;</p>
 			</div>
 		</header>
 		<main>
@@ -68,98 +83,120 @@
 				<section>
 					<div class="thumbnailSection">
 						<div class="leftArrow">
-							<a onclick="plusSlides(-1)"><i class="icon-left-open"></i></a>
+							<a onclick="plusSlides(-1)"><i class="icon-left-open"></i></a> 
 						</div>
 						<div class="upArrow">
-							<a onclick="plusSlides(-1)"><i class="icon-up-open"></i></a>
+							<a onclick="plusSlides(-1)"><i class="icon-up-open"></i></a> 
 						</div>
 						<div class="mySlides fade">
-							<div class="thumbnail">
-								<img src="got.jpg" alt=""/>
+							<div class="thumbnail adin">
+								<img src="1.jpg" alt=""/>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
 							</div>
 							<div class="thumbnail">
-								<img src="got.jpg" alt=""/>
+								<img src="2.jpg" alt=""/>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
 							</div>
 							<div class="thumbnail">
-								<img src="got.jpg" alt=""/>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
-							</div>
-						</div>
-						<div class="mySlides fade">
-							<div class="thumbnail">
-								<img src="got2.jpg" alt=""/>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
-							</div>
-							<div class="thumbnail">
-								<img src="got2.jpg" alt=""/>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
-							</div>
-							<div class="thumbnail">
-								<img src="got2.jpg" alt=""/>
+								<img src="3.jpg" alt=""/>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
 							</div>
 						</div>
 						<div class="mySlides fade">
-							<div class="thumbnail">
-								<img src="got3.jpg" alt=""/>
+							<div class="thumbnail adin">
+								<img src="2.jpg" alt=""/>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
 							</div>
 							<div class="thumbnail">
-								<img src="got3.jpg" alt=""/>
+								<img src="3.jpg" alt=""/>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
 							</div>
 							<div class="thumbnail">
-								<img src="got3.jpg" alt=""/>
+								<img src="4.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+						</div>
+						<div class="mySlides fade">
+							<div class="thumbnail adin">
+								<img src="3.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="4.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="1.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+						</div>
+						<div class="mySlides fade">
+							<div class="thumbnail adin">
+								<img src="4.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="1.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="2.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+						</div>
+						<div class="mySlides fade">
+							<div class="thumbnail adin">
+								<img src="1.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="2.jpg" alt=""/>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
+							</div>
+							<div class="thumbnail">
+								<img src="3.jpg" alt=""/>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nisi. Nunc sodales sem aliquam suscipit molestie. Quisque et est et nisi molestie posuere. </p>
 							</div>
 						</div>
 						<div class="rightArrow">
-							<a onclick="plusSlides(1)"><i class="icon-right-open"></i></a>
+						<a onclick="plusSlides(1)"><i class="icon-right-open"></i></a> 
 						</div>
 						<div class="downArrow">
-								<a onclick="plusSlides(1)"><i class="icon-down-open"></i></a>
+								<a onclick="plusSlides(1)"><i class="icon-down-open"></i></a> 
 							</div>
 						<div style="clear: both;"></div>
-					</div>
-					<div id="dots" style="text-align:center">
-						<span class="dot" onclick="currentSlide(1)"></span> 
-						<span class="dot" onclick="currentSlide(2)"></span> 
-						<span class="dot" onclick="currentSlide(3)"></span> 
-					  </div>
-				</section>
-				<hr>
-				<section>
-					<div class="thumbnailUnrolling">
-						<img src="got2.jpg" alt=""/>
+						<div id="dots" style="text-align:center">
+								<span class="dot" onclick="currentSlide(1)"></span> 
+								<span class="dot" onclick="currentSlide(2)"></span> 
+								<span class="dot" onclick="currentSlide(3)"></span> 
+						</div>
 					</div>
 				</section>
 			</div>
 		</main>
 		<footer>	
 			<div class="contact">
-				<h4>Kontakt</h4>
-				<p>Lorem ipsum dolor sit amet,</br> 
-				consectetur adipiscing elit.</p>
+				<b><p>Kontakt</b></br>
+				email: <i>contact@sporthub.com</i></p>
 			</div>
 			<div class="rights">
-				<p>&copy; Wszelkie prawa zastrzeżone! 2017</p>
+				<p>&copy; SportHub 2017</p>
+				<p>Wszelkie prawa zastrzeżone!</p>
 			</div>
 			<div class="socialMedia">
 				<a href="#">
 					<div class="icon iconf">
-						<i class="demo-icon icon-facebook"></i>
+						<i class="icon-facebook"></i>
 					</div>
 				</a>
 				<a href="#">
 					<div class="icon iconi">
-						<i class="demo-icon icon-instagram"></i>
+						<i class="icon-instagram-filled"></i>
 					</div>
 					</a>
 				<a href="#">
-					<div class="icon icons">
-						<i class="demo-icon icon-snapchat-ghost"></i>
+					<div class="icon icont">
+						<i class="icon-twitter-bird"></i>
 					</div>
 				</a>
 				<div style="clear:both;"></div>
@@ -169,9 +206,13 @@
 		<script>
 			//var menu = document.getElementsByClassName("menuIcon")[0];
 			//var nav = document.getElementsByTagName("nav")[0];
-			function unroll(){
-				document.getElementsByClassName("nav")[0].style.display="block";
-				document.getElementsByClassName("menuIcon")[0].style.display="none";
+			
+			function openNav() {
+				document.getElementById("navigation").style.width = "250px";
+			}
+
+			function closeNav() {
+				document.getElementById("navigation").style.width = "0";
 			}
 			//Slider
 			var slideIndex = 1;

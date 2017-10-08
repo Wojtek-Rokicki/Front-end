@@ -11,7 +11,10 @@ body{
 .menuIcon{
 	display: none;
 }
-.fixedFacebook, .fixedSnapChat, .fixedInstagram{
+.fixedFacebook, .fixedTwitter, .fixedInstagram{
+	display: none;
+}
+#navigation{
 	display: none;
 }
 .nav{
@@ -21,6 +24,10 @@ body{
 	width: 100%;
 	overflow: hidden;
 	background-color: #43464c;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: white;
+	/*position: fixed;*/
 }
 .nav li{
 	float: left;
@@ -34,6 +41,14 @@ body{
 	color: white;
 	padding: 15px;
 }
+.nav li p.name{
+	letter-spacing: 4px;
+	font-weight: 700;
+	margin-top: 14px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+} 
 .nav li a.active{
 	background-color:#303235;
 }
@@ -56,11 +71,12 @@ li.loginLi, li.registerLi{
 }
 
 .loginForm{
+	visibility: hidden;
 	opacity: 0;
-    transition: opacity 1s;
+    transition: visibility 0.5s, opacity 1s;
 	position: absolute;
 	right: 210px;
-	top: 64px;
+	top: 66px;
     background-color: #43464c;
     box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
     z-index: 1;
@@ -89,11 +105,12 @@ li.loginLi, li.registerLi{
     border-color: transparent transparent #43464c transparent;
 }
 .registerForm{
+	visibility: hidden;
 	opacity: 0;
-	transition: opacity 1s;
+	transition: visibility 0.5s, opacity 1s;
     position: absolute;
 	right: 16px;
-	top: 64px;
+	top: 66px;
     background-color: #43464c;
     box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
     z-index: 1;
@@ -102,9 +119,11 @@ li.loginLi, li.registerLi{
 	width: 200px;
 }
 .registerLi:hover .registerForm{
+	visibility: visible;
 	opacity: 1;
 }
 .loginLi:hover .loginForm{
+	visibility: visible;
 	opacity: 1;
 }
 input[type=text], select {
@@ -161,8 +180,10 @@ body header{
 
 .thumbnailSection{
 	width: 100%;
-	margin-top: 40px;
-	margin-bottom: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: white;
+	color: black;
 	position: relative;
 }
 .mySlides {
@@ -203,7 +224,7 @@ body header{
 	height: auto;
 }
 #dots{
-	margin-bottom: 35px;
+	padding-bottom: 35px;
 }
 .dot {
 	cursor:pointer;
@@ -236,37 +257,48 @@ body header{
 	to {opacity: 1}
   }
 
-
 .thumbnailUnrolling{
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 5px;
+	background: white;
+	color: black;
 }
 .thumbnailUnrolling img{
 	width: 30%;
 	height: auto;
+	
 }
 /* Tu JS podmiany zawartości thumbnailUnrolling */
 
 
 footer{
-	margin-top: 50px;
+	margin-top: 10px;
 	background-color: #43464c;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color: white;
 }
 .contact{
 	float: left;
 	width: 33.33%;
 	padding-left: 60px;
+	font-size: 16px;
+	letter-spacing: 2px;
+	display: block;
+	margin: auto;
+	text-align: left;
+	margin-top: 20px;
 }
 .rights{
 	float: left;
 	width: 33.33%;
-	padding-top: 50px;
+	margin-top: 40px;
 	font-size: 16px;
 	letter-spacing: 2px;
+	text-align: center;
 }
 .rights p{
 	display: block;
-	width: 80%;
 	margin: auto;
 }
 .socialMedia{
@@ -293,8 +325,8 @@ footer{
 .iconi:hover{
 	background-color: #99215d;
 }
-.icons:hover{
-	background-color: #cfd608;
+.icont:hover{
+	background-color: #00CCFF;
 }
 
 
@@ -311,12 +343,12 @@ footer{
 		font-size: 20px;
 		padding: 6px;
 	}
-	.fixedSnapChat{
+	.fixedTwitter{
 		display: block;
 		position: fixed;
 		top: 70px;
 		right: 0px;
-		background-color: #cfd608;
+		background-color: #00CCFF;
 		width: 50px;
 		height: 30px;
 		font-size: 20px;
@@ -336,23 +368,46 @@ footer{
 		padding-left: 6px;
 	}
 	/* Menu */
-	.nav{
+	nav{
 		display: none;
+	}
+	#navigation{
+		display: block;
+		height: 100%;
+		width: 0px;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
 		text-align: center;
 	}
-	.nav li{
-		float: none;
-		display: block;
+	#navigation ul{
+		list-style-type: none;
 	}
-	.nav li:first-child{
-		margin-top: 20px;
-		margin-left: 0px;
+	#navigation ul li{
+		text-align: center;
+		letter-spacing: 2px;
+		font-size: 16px;
+		color: white;
+		padding: 15px;
 	}
-	.nav li:last-child{
-		margin-bottom: 20px;
+	#navigation ul li a:hover{
+		color: rgb(216, 216, 216);
 	}
-	#register{
-		margin-right: 0px;
+	#navigation ul li a{
+		text-decoration: none;
+		color: white;
+	}
+	#navigation li a.closebtn{
+		position: absolute;
+		top: 20px;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
 	}
 	.menuIcon{
 		display: block;
